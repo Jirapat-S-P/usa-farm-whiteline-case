@@ -318,7 +318,66 @@
 </section>
 
 <section>
-  <h2>12. ข้อจำกัดสำคัญ</h2>
+  <h2>12. แผนภาพเชื่อมโยง: จากสาเหตุถึงผลลัพธ์</h2>
+  <svg viewBox="0 0 910 400" width="100%" height="400">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#8a6d3b"/>
+      </marker>
+    </defs>
+
+    <!-- connecting lines: cause -> hub -->
+    <line x1="290" y1="40"  x2="440" y2="192" stroke="#b3452f" stroke-width="4" marker-end="url(#arrow)"/>
+    <line x1="290" y1="116" x2="440" y2="192" stroke="#c07a2a" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="290" y1="192" x2="440" y2="192" stroke="#c07a2a" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="290" y1="268" x2="440" y2="192" stroke="#c07a2a" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <line x1="290" y1="344" x2="440" y2="192" stroke="#b99a2a" stroke-width="2" marker-end="url(#arrow)"/>
+    <!-- hub -> outcome -->
+    <line x1="650" y1="192" x2="690" y2="192" stroke="#6b4f26" stroke-width="5" marker-end="url(#arrow)"/>
+
+    <!-- cause boxes -->
+    <rect x="10" y="6"   width="280" height="68" rx="8" fill="#fff" stroke="#b3452f" stroke-width="2"/>
+    <text x="20" y="30" font-size="13.5" font-weight="700" fill="#2a2420">พื้นคอกหินกรวด + ความชื้น</text>
+    <text x="20" y="48" font-size="12" fill="#6b6058">(คอนกรีตแตกเป็นหลุม ~2 สัปดาห์ก่อน)</text>
+    <text x="280" y="66" font-size="12" fill="#b3452f" font-weight="700" text-anchor="end">🔴 สูงมาก</text>
+
+    <rect x="10" y="82" width="280" height="68" rx="8" fill="#fff" stroke="#c07a2a" stroke-width="2"/>
+    <text x="20" y="106" font-size="13.5" font-weight="700" fill="#2a2420">ไม่มีแต่งกีบ + ไม่มี footbath</text>
+    <text x="20" y="124" font-size="12" fill="#6b6058">ไม่มีโปรแกรมป้องกันเลย</text>
+    <text x="280" y="142" font-size="12" fill="#c07a2a" font-weight="700" text-anchor="end">🟠 สูง</text>
+
+    <rect x="10" y="158" width="280" height="68" rx="8" fill="#fff" stroke="#c07a2a" stroke-width="2"/>
+    <text x="20" y="182" font-size="13.5" font-weight="700" fill="#2a2420">TMR ชั้นบน 16.4%</text>
+    <text x="20" y="200" font-size="12" fill="#6b6058">→ การคัดกิน (sorting)</text>
+    <text x="280" y="218" font-size="12" fill="#c07a2a" font-weight="700" text-anchor="end">🟠 สูง</text>
+
+    <rect x="10" y="234" width="280" height="68" rx="8" fill="#fff" stroke="#c07a2a" stroke-width="2"/>
+    <text x="20" y="258" font-size="13.5" font-weight="700" fill="#2a2420">DMI/CP ไม่พอ</text>
+    <text x="20" y="276" font-size="12" fill="#6b6058">(under-nutrition)</text>
+    <text x="280" y="294" font-size="12" fill="#c07a2a" font-weight="700" text-anchor="end">🟠 ปานกลาง-สูง</text>
+
+    <rect x="10" y="310" width="280" height="68" rx="8" fill="#fff" stroke="#b99a2a" stroke-width="2"/>
+    <text x="20" y="334" font-size="13.5" font-weight="700" fill="#2a2420">บัฟเฟอร์/แร่ธาตุไม่พอ</text>
+    <text x="20" y="352" font-size="12" fill="#6b6058">(หลักฐานอ่อน)</text>
+    <text x="280" y="370" font-size="12" fill="#b99a2a" font-weight="700" text-anchor="end">🟡 ปานกลาง</text>
+
+    <!-- hub -->
+    <rect x="440" y="142" width="210" height="100" rx="10" fill="#fdf3e0" stroke="#8a6d3b" stroke-width="2.5"/>
+    <text x="545" y="180" font-size="15" font-weight="700" fill="#6b4f26" text-anchor="middle">White line</text>
+    <text x="545" y="200" font-size="15" font-weight="700" fill="#6b4f26" text-anchor="middle">อ่อนแอ + แยกตัว</text>
+    <text x="545" y="222" font-size="13" fill="#8a6d3b" text-anchor="middle">→ ติดเชื้อ</text>
+
+    <!-- outcome -->
+    <rect x="690" y="142" width="210" height="100" rx="10" fill="#6b4f26" stroke="#6b4f26" stroke-width="2"/>
+    <text x="795" y="180" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">Abscess → LAME</text>
+    <text x="795" y="202" font-size="12.5" fill="#f1ece0" text-anchor="middle">4 เคส</text>
+    <text x="795" y="220" font-size="12.5" fill="#f1ece0" text-anchor="middle">(3 โครีด + 1 โคสาว)</text>
+  </svg>
+  <p class="subtle">ความหนาของเส้น = น้ำหนักหลักฐานเชิงคุณภาพ ไม่ใช่สัดส่วนเชิงปริมาณ · สรุปจากรายงาน §8-9</p>
+</section>
+
+<section>
+  <h2>13. ข้อจำกัดสำคัญ</h2>
   <ul>
     <li>PSPS ทำเพียง <strong>1 ซ้ำ</strong> (คู่มือกำหนด ≥3) — ยังไม่มีค่าความแปรปรวน</li>
     <li>ไม่มีผลวิเคราะห์อาหารจริงจากห้องแล็บแม้แต่ค่าเดียว — ทุกค่าอิงตารางมาตรฐาน</li>
@@ -328,7 +387,7 @@
 </section>
 
 <section>
-  <h2>13. ข้อเสนอแนะเชิงปฏิบัติ</h2>
+  <h2>14. ข้อเสนอแนะเชิงปฏิบัติ</h2>
   <ol class="step-list">
     <li>ตรวจสอบว่าการซ่อมพื้นคอกโครีดเอาหินกรวดออกหมดจริงหรือไม่ + ตรวจคอกอื่น</li>
     <li>เริ่มโปรแกรม footbath สม่ำเสมอ (ปัจจุบันไม่มีเลย)</li>
@@ -338,7 +397,7 @@
 </section>
 
 <section>
-  <h2>14. สรุป</h2>
+  <h2>15. สรุป</h2>
   <ul>
     <li><strong>พื้นคอกที่มีหินกรวด</strong> (ตอนนี้ทราบสาเหตุแล้ว: คอนกรีตแตกเป็นหลุม) คือหลักฐานที่แข็งแรงที่สุด</li>
     <li>ซ้ำเติมด้วย<strong>การไม่มีโปรแกรมดูแลกีบป้องกัน</strong>เลย</li>
