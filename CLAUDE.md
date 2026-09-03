@@ -92,6 +92,22 @@ generate — and, since 2026-09-02, (3) analysing data from a real farm visit.
   disinfection/hardening while claws sit in the gravelly wet pen documented separately. Report
   §12 now opens with starting a footbath program and a preventive trimming schedule as the two
   highest-priority, lowest-cost recommendations, ahead of the diet changes.
+- **The gravel's source is now confirmed: the concrete floor in the lactating-cow pen (คอกโครีด)
+  broke down into potholes ~2 weeks before this fact was reported (2026-09-03), with a large
+  amount of gravel sitting in the holes — the farm has since repaired the floor.** User-supplied,
+  not in the original farm-visit files. This resolves the report's "ไม่ทราบแหล่งที่มาของหิน" gap
+  (differential #1, §9) and is a near-verbatim match to Blowey's own description of the mechanism
+  (p. 73: "damaged and pitted concrete...can give rise to small stones which can become impacted
+  in the white line"). **Open questions this raises — don't silently drop them:** (1) the damage
+  is specific to the lactating-cow pen; unknown whether the affected heifer (โคสาว) was ever
+  exposed to that specific floor, which matters because the report leans on "she got sick too" as
+  evidence the cause affects all groups equally; (2) unknown whether other pens have similar
+  damage; (3) unknown whether the 4 cases' onset dates fall inside the ~2-week pothole window
+  (would be strong temporal evidence, not just cross-sectional association); (4) unknown whether
+  the repair removed the embedded gravel or just resurfaced over it. All four are now tracked as
+  limitation items 31-34 and data-collection item 1.14 in the report. The already-completed repair
+  is also flagged in §11 item 3.3 and §12 recommendation #1 as an accidental natural-experiment
+  opportunity — get before/after incidence data if at all possible.
 - **Prefer converting a missing measurement into a testable threshold, then firm it up with a
   same-country analog if one exists** — don't stop at the threshold if better data turns up.
   Worked example: pef>8 = 43.3% measured → TMR needs NDF ≥ 42.7% DM to clear Zebeli's
