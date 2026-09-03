@@ -49,6 +49,16 @@ generate — and, since 2026-09-02, (3) analysing data from a real farm visit.
   old Artifact URL (v3, `9489846a-...`) is now stale/abandoned — don't republish to it. If a new
   report needs an HTML rendering, generate it the same way (Node + `marked`, styled template) and
   write it to a local file, not the Artifact tool.
+- **This project is pushed to GitHub at `Jirapat-S-P/usa-farm-whiteline-case` — and the repo is
+  PUBLIC, not private.** It started private (2026-09-03, first push), then was deliberately
+  switched to public the same day so GitHub Pages could serve the HTML report at a live URL
+  (`https://jirapat-s-p.github.io/usa-farm-whiteline-case/usa-farm-whiteline-case-report.html`) —
+  GitHub Pages has no private mode on this account tier. **This means the farm-critical findings
+  in the report (GAP non-compliance, no footbath/trimming program, etc.) are now publicly
+  readable.** The two reference PDFs (ThaiNRC, Blowey textbook) stay excluded via `.gitignore`
+  regardless of visibility. If privacy needs to be restored, that means either disabling Pages and
+  reverting to private, or removing/redacting identifying details first — don't silently re-flip
+  visibility without flagging the tradeoff again, the same way it was flagged before this switch.
 - **Label every number's provenance.** Each figure must be visibly marked as one of: *measured at
   this farm*, *from a standard table*, or *assumed*. This is the single thing that makes the work
   defensible in a coursework presentation, and it is the first thing an examiner attacks.
