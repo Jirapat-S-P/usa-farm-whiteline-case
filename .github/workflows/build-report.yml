@@ -1,0 +1,39 @@
+name: Build HTML report
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'usa-farm-whiteline-case-report.md'
+      - 'templates/report-template.html'
+      - 'scripts/build-report.js'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install --no-save marked@18.0.11
+
+      - run: node scripts/build-report.js usa-farm-whiteline-case-report.md
+
+      - name: Commit updated HTML if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add usa-farm-whiteline-case-report.html
+          if git diff --cached --quiet; then
+            echo "No changes to the built HTML."
+          else
+            git commit -m "Auto-build: regenerate HTML report from Markdown source"
+            git push
+          fi

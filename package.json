@@ -1,0 +1,11 @@
+{
+  "name": "usa-farm-whiteline-case",
+  "private": true,
+  "description": "Build script for rendering the Usa Farm white line disease case report as HTML",
+  "scripts": {
+    "build": "node scripts/build-report.js usa-farm-whiteline-case-report.md"
+  },
+  "dependencies": {
+    "marked": "18.0.11"
+  }
+}
