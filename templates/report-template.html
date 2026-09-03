@@ -200,10 +200,46 @@
   @media print{
     body{background:#fff;}
     .doc{box-shadow:none; border:none;}
+    .tabbar{display:none;}
+  }
+
+  .tabbar{
+    position:sticky;
+    top:0;
+    z-index:10;
+    display:flex;
+    justify-content:center;
+    gap:0.5rem;
+    padding:0.75rem 1rem;
+    background:var(--bg);
+    border-bottom:1px solid var(--border);
+  }
+  .tabbar a{
+    text-decoration:none;
+    color:var(--text-muted);
+    font-size:0.92rem;
+    font-weight:600;
+    padding:0.5rem 1.1rem;
+    border-radius:999px;
+    border:1px solid transparent;
+  }
+  .tabbar a.active{
+    color:var(--accent-strong);
+    background:var(--bg-card);
+    border-color:var(--border);
+    box-shadow:var(--shadow);
+  }
+  .tabbar a:not(.active):hover{
+    color:var(--text);
+    border-color:var(--border);
   }
 </style>
 </head>
 <body>
+<nav class="tabbar">
+  <a href="usa-farm-whiteline-case-report.html" class="active">📄 รายงานฉบับเต็ม</a>
+  <a href="usa-farm-whiteline-case-presentation.html">🖥️ สไลด์นำเสนอ</a>
+</nav>
 <div class="page">
 <div class="doc">
 {{CONTENT}}
